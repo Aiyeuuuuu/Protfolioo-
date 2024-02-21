@@ -1,6 +1,8 @@
+import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import eic from "../assets/profile-image.png";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -18,22 +20,22 @@ const Landing = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
-              class="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[600px]"
-              src="assests/profile-image.png" 
+              class="hover: w-full max-w-[550px] h-[550px]"
+              src={eic}
             />
           </div>
         ) : (
           <img
             alt="profile"
             className="z-10 w-full max-w-[700px] md:max-w-[600px]"
-            src="assets/profile-image.png"
+            src={eic}
           />
         )}
       </div>
 
-      {/* MAIN TEXT */}
+      {/* The main section */}
       <div className="z-30 basis-2/5 mt-12 md:mt-32">
-        {/* HEADINGS */}
+        {/* headings */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -81,15 +83,7 @@ const Landing = ({ setSelectedPage }) => {
           >
             Contact Me
           </AnchorLink>
-          <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
-          >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
-              Let's talk.
-            </div>
-          </AnchorLink>
+          
         </motion.div>
 
         <motion.div
@@ -103,8 +97,9 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-       
+
         </motion.div>
+        <SocialMediaIcons />
       </div>
     </section>
   );
