@@ -10,7 +10,7 @@ const MySkills = () => {
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
           className="md:w-1/3"
-          initial="hidden" 
+          initial="hidden"  
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
@@ -29,10 +29,10 @@ const MySkills = () => {
           </p>
         </motion.div>
 
-        <div className="mt-16 md:mt-0">
+        <div className="mt-5 md:mt-0">
           {isAboveLarge ? (
             <div
-              className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
+              className="relative z-0 ml-80 before:absolute before:-top-10 before:-left-10
               before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
             >
               <img
@@ -48,7 +48,7 @@ const MySkills = () => {
       </div>
 
       {/* SKILLS */}
-      <div className="md:flex md:justify-between mt-16 gap-32">
+      <div className="md:flex md:justify-between mt-0 gap-32">
         {/* frist  */}
         <motion.div
           className="md:w-1/3 mt-10"
@@ -61,9 +61,9 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative h-21">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">01</p>
+              <p className="font-playfair font-semibold text-3xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 DATA SCIENCE 
               </p>
@@ -71,9 +71,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-          Delving deep into data analytics, machine learning, and 
-          statistical modeling to extract valuable insights and drive 
-          informed decision-making.
+          Utilizing data analytics, machine learning, and statistical modeling to extract insights for informed decision-making.  
           </p>
         </motion.div>
 
@@ -89,9 +87,9 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative h-21">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">02</p>
+              <p className="font-playfair font-semibold text-3xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 UI/UX DESIGN 
               </p>
@@ -115,9 +113,9 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative h-21">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">03</p>
+              <p className="font-playfair font-semibold text-3xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 WEB DEVELOPMENT
               </p>
@@ -125,8 +123,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-          Building responsive and user-friendly websites, leveraging my expertise in HTML, CSS, 
-          React, and beyond to bring ideas to life on the digital frontier.
+          Crafting responsive, user-friendly websites using HTML, CSS, React, and more to bring digital ideas to life.
           </p>
         </motion.div>
       </div>
