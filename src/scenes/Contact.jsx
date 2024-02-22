@@ -36,13 +36,13 @@ const Contact = () => {
             <span className="text-yellow">CONTACT ME</span> 
           </p>
           <div className="flex md:justify-bottom my-5">
-           <LineGradient width="mx-auto w-5/6" />
+           <LineGradient width="mx-auto w-2/4" />
           </div>
         </div>
       </motion.div>
 
       {/* the from and the image */}
-      <div className="md:flex md:justify-between gap-16 mt-5">
+      <div className="md:flex md:justify-end gap-16 mt-5">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -54,7 +54,7 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="../assets/contact-image.png" alt="contact" />
+          <img src="../assets/contact-imagee.png" alt="contact" />
         </motion.div>
 
         <motion.div
@@ -75,7 +75,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-red font-semibold placeholder-opaque-black p-3"
+              className="w-full bg-yellow font-semibold placeholder-opaque-black p-3"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -91,7 +91,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full bg-red font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-yellow font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -107,7 +107,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg-red font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-yellow font-semibold placeholder-opaque-black p-3 mt-5"
               name="message"
               placeholder="MESSAGE"
               rows="4"

@@ -12,7 +12,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
-      {page}
+      {page} 
     </AnchorLink>
   );
 };

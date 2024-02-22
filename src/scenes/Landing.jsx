@@ -2,7 +2,7 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import eic from "../assets/profile-image.png";
+import eic from "../assets/profile-imagee.png";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -13,14 +13,14 @@ const Landing = ({ setSelectedPage }) => {
     >
       {/* the image section */}
 
-      <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+      <div className="basis-4/7 z-10 mt-50 md:mt-50 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
             
           >
             <img
               alt="profile"
-              class="hover: w-full max-w-[550px] h-[550px]"
+              class="hover: w-full max-w-[600px] h-[650px]"
               src={eic}
             />
           </div>
