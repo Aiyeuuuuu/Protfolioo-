@@ -3,6 +3,7 @@ import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
+import Contact from "./scenes/Contact";
 import LineGradient from "./components/LineGradient";
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
@@ -15,7 +16,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY === 0) {
+      if (window.scrollY === 0) { 
         setIsTopOfPage(true);
         setSelectedPage("home");
       }
@@ -49,7 +50,12 @@ function App() {
       <div className="w-5/6 mx-auto md:h-full">
         < Projects />
       </div>
+      <LineGradient/>
+      <div className="w-5/6 mx-auto md:h-full">
+        < Contact />
       </div>
+      </div>
+
       
   );
 }
